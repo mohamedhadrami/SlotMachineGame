@@ -1,6 +1,5 @@
 
 import random, string
-from typing import Any
 
 class Board():
 
@@ -44,10 +43,9 @@ class Board():
         return printable_board
         '''
 
-    def __call__(self, *args: Any, **kwds: Any) -> Any:
+    def __call__(self, *args: any, **kwds: any) -> any:
         print(self)
         wins = self.check_win()
-        print(wins)
         return self.data, wins
 
     def get_symbols(self) -> list:
