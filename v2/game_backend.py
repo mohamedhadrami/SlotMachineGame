@@ -36,7 +36,6 @@ def display_previous_games(data: dict) -> None:
         print(f"{i}. {game}")
         print(f"\tWinnings: {data[game]['gain']}")
         print(f"\tRounds: {len(data[game]['rounds'])}")
-        i += 1
 
 def spin(balance: float, bet: int) -> int:
     board = user_board.get_board()
